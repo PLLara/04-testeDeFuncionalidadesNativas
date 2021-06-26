@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+  <style>
+    :root {
+      scroll-padding-top: 90px;
+      scroll-behavior: smooth;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    h2 {
+      color: rgb(56, 56, 56);
+    }
+
+    fieldset {
+      margin: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id='navBar'>
+    <style>
+      #navBar {
+        position: fixed;
+        background-color: azure;
+        width: 100vw;
+      }
+
+      #navBarLinks {
+        display: flex;
+        max-width: 100vw;
+        overflow: scroll;
+        padding: 10px
+      }
+
+      #navBarLinks li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    </style>
+    <ul id='navBarLinks'>
+    </ul>
+  </div>
+
+  <br><br><br><br>
+
+  <fieldset>
+    <legend>
+      <h2>nthChild</h2>
+    </legend>
+    Even -> Aplica o bgcolor apenas aos filhos pares.
+    <style>
+      tr:nth-child(even){
+        background-color: #ddd;
+      }
+    </style>
+    <table border='5'>
+      <tr>
+        <th>Nome</th> <th>Numero</th>
+      </tr>
+      <tr>
+        <td>Pedro</td> <td>17</td>
+      </tr>
+      <tr>
+        <td>Lucas</td> <td>18</td>
+      </tr>
+      <tr>
+        <td>Oliveira</td> <td>19</td>
+      </tr>
+      <tr>
+        <td>Lara</td> <td>19</td>
+      </tr>
+
+    </table>
+  </fieldset>
+  <hr>
+
+
+  <fieldset>
+    <legend>
+      <h2>Resize</h2>
+    </legend>
+    Mudar o tamanho de elementos
+    <br><br>
+    <div style="border: 2px solid;padding: 20px; width: 300px;resize: both;overflow: hidden;">
+      Essa div pode ter seu tamanho modificado
+    </div>
+  </fieldset>
+  <hr>
+
+  <fieldset>
+    <legend>
+      <h2>Meter</h2>
+    </legend>
+    Serve para ter uma indicação visual do status do medidor
+    <br><br>
+    <meter min="0" max="100" low="10" high="60" optimum="100" value="100">50%</meter> <i>Cheio</i> <br>
+    <meter>50%</meter> <i>Vazio</i> <br>
+    <meter min="0" max="100" low="20" high="60" optimum="100" value="10">50%</meter> <i>Abaixo de low</i> <br>
+    <meter min="0" max="100" low="20" high="40" optimum="60" value="30">50%</meter> <i>Médio</i> <br>
+    <meter min="0" max="100" low="20" high="40" optimum="60" value="50">50%</meter> <i>bom</i> <br>
+    <meter value=0.5>50%</meter> <i>bom</i> <br>
+    <meter min="0" max="100" low="20" high="40" optimum="60" value="90">50%</meter> <i>òtimo</i> <br>
+  </fieldset>
+  <hr>
+
+
+
+  <fieldset>
+    <legend>
+      <h2>textRalatedTags</h2>
+    </legend>
+    Serve para ter uns efeitos legais no texto
+    <br><br>
+    <p>
+      <del>DELETE</del> <br>
+      <i>ITALIC</i> <br>
+      <strong>STRONG</strong> <br>
+      <ins>INTEAD</ins> <br>
+
+    </p>
+  </fieldset>
+  <hr>
+
+
+
+  <fieldset>
+    <legend>
+      <h2>Iframe</h2>
+    </legend>
+    Serve para ter um site no site
+    <br><br>
+    <iframe src="https://smashthewalls.com/" style="border: 1px inset #ddd" width="200" height="200"></iframe>
+  </fieldset>
+  <hr>
+
+
+
+
+  <fieldset>
+    <legend>
+      <h2>Template</h2>
+    </legend>
+    Serve para ter um template a ser usado várias vezes na página
+    <template>
+      <fieldset>
+        <legend>
+          <h2>NOME_DA_CLASSE</h2>
+        </legend>
+        DESCRIÇÃO_DA_CLASSE
+        <br><br>
+        A CLASSE EM SI
+        <i>Obs: Aqui vão as observações sobre a classe</i>
+      </fieldset>
+      <hr>
+    </template>
+    <br><br>
+    <i>OBS: Ele não aparece pois é só um template, precisa ser replicado para surtir efeito.</i>
+  </fieldset>
+  <hr>
+
+
+
+
+  <fieldset>
+    <legend>
+      <h2>Sup/Sub</h2>
+    </legend>
+    Serve para H<sub>2</sub>0 e X<sup>2</sup>
+    <br><br>
+  </fieldset>
+  <hr>
+
+
+
+
+  <fieldset>
+    <legend>
+      <h2>Color</h2>
+    </legend>
+    Serve para ter um input de cor
+    <br><br>
+    <input type="color">
+  </fieldset>
+  <hr>
+
+
+
+  <fieldset>
+    <legend>
+      <h2>Progress</h2>
+    </legend>
+    Serve para definir uma barra de progresso de maneira fácil
+    <br><br>
+    <progress value="0" max="100"></progress> <i>&nbsp 0/100</i> <br>
+    <progress value="50" max="100"></progress> <i>&nbsp 50/100</i> <br>
+    <progress value="100" max="100"></progress> <i>&nbsp 100/100</i> <br>
+    <progress></progress> <i>&nbsp Sem valor</i>
+  </fieldset>
+  <hr>
+
+
+  <fieldset>
+    <legend>
+      <h2>Definition</h2>
+    </legend>
+    Usado para termos e suas definições
+    <br><br>
+    <dl>
+      <dt><strong>Segunda-Feira</strong></dt>
+      <dd>O primeiro dia da semana</dd>
+      <dt><strong>Terça-Feira</strong></dt>
+      <dd>O segundo dia da semana</dd>
+    </dl>
+  </fieldset>
+  <hr>
+
+
+
+  <fieldset>
+    <legend>
+      <h2>Details</h2>
+    </legend>
+    Serve para armazenar detalhes escondidos por um texto(Sumário).<br>
+    <br><br>
+    <details>
+      <dl>
+        <dd>
+          <p>Pedro</p>
+          <p>Lucas de</p>
+          <p>O.</p>
+          <p>LLara</p>
+        </dd>
+      </dl>
+    </details>
+    <i>Detalhe: Eu implementei o definition pelo margin que ele aplica</i>
+  </fieldset>
+  <hr>
+
+
+  <fieldset>
+    <legend>
+      <h2>Datalist/Label</h2>
+    </legend>
+    Serve para ter dados de sugestões para o input / Serve para dar um label ao input
+    <br><br>
+    <label for="diasDaSemana">Selecione o dia</label>
+    <input list="weekdays" id="weekday">
+    <datalist id="weekdays">
+      <option value="Domingo">
+      <option value="Terça">
+      <option value="Quarta">
+    </datalist>
+  </fieldset>
+  <hr>
+
+
+
+  <fieldset>
+    <legend>
+      <h2>ContentEditable</h2>
+    </legend>
+    Serve para tornar o conteúdo do innerHTML editável.
+    <br>
+    <ol contenteditable>
+      <li>Segunda</li>
+      <li>Terça</li>
+      <li>Quarta</li>
+    </ol>
+  </fieldset>
+  <hr>
+
+
+  <fieldset>
+    <legend>
+      <h2>Mark</h2>
+    </legend>
+    Serve para <mark>marcar um determinado conteúdo</mark>.
+  </fieldset>
+  <hr>
+
+
+
+  <fieldset>
+    <legend>
+      <h2>Optgroup</h2>
+    </legend>
+    Serve para fazer grupos(group) das opções(opt) disponíveis num &ltselect&gt &ltoption&gt
+    <br><br>
+    <select>
+      <optgroup label="Manhã">
+        <option>7:00</option>
+        <option>8:00</option>
+        <option>9:00</option>
+      </optgroup>
+      <optgroup label="Tarde">
+        <option>13:00</option>
+        <option>14:00</option>
+        <option>15:00</option>
+      </optgroup>
+    </select>
+  </fieldset>
+  <hr>
+
+
+</body>
+<script>
+  (Array.from(document.querySelectorAll('h2'))).forEach(e => {
+    let name = e.innerHTML
+    e.id = name
+    document.querySelector('#navBarLinks').innerHTML += `<li><a href=#${name}>${name}</a></li>`
+  })
+</script>
+
+</html>
